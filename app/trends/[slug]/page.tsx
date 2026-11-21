@@ -19,7 +19,7 @@ async function getBlueprint(slug: string): Promise<Blueprint | null> {
     JOIN blueprints b ON b.trend_id=t.id AND b.published=true
     LEFT JOIN trend_videos v ON v.trend_id=t.id AND v.is_primary=true
     WHERE t.slug=${slug} AND t.status='published' LIMIT 1`;
-  return (rows[0] as Blueprint) || null;
+  return (rows[0] as unknown as Blueprint) || null;
 }
 
 export default async function TrendDetail({ params }: { params: Promise<{ slug: string }> }) {
