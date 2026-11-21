@@ -17,7 +17,7 @@ export async function getPublishedTrends(): Promise<Trend[]> {
       WHERE t.status = 'published'
         AND EXISTS (SELECT 1 FROM blueprints b WHERE b.trend_id = t.id AND b.published = true)
       ORDER BY t.featured DESC, t.last_verified DESC NULLS LAST
-      LIMIT 30` as Trend[];
+      LIMIT 30` as unknown as Trend[];
   } catch (error) {
     console.error("Could not load published trends", error);
     return [];
