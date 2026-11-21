@@ -22,10 +22,10 @@ export default async function Home() {
     <section className="hero">
       <div className="hero-glow"></div><div className="hero-inner wrap">
         <div className="hero-copy"><div className="eyebrow"><span className="live-dot"></span> THE WORLD IS SCROLLING. ETHIOPIA IS WATCHING.</div>
-          <h1>WE MAKE YOU<br/><em>FAMOUS</em> IN<br/>ETHIOPIA<span className="period">.</span></h1>
+          <h1>WANT TO GET<br/><em>NOTICED</em><br/>IN ETHIOPIA<span className="period">?</span></h1>
           <p className="hero-lead">Your next audience might be somewhere you haven’t looked yet. Discover the TikTok trends, sounds and creative moments moving across Ethiopia—and make them your own.</p>
           <div className="hero-actions"><a className="button button-lime" href="#discover">Explore Ethiopian trends <span>↗</span></a><a className="text-link" href="#stories">Meet the creators <span>↓</span></a></div>
-          <p className="hero-note">A bold invitation to discover a new audience—not a promise of fame or viral views.</p>
+          
         </div>
         <div className="hero-art" aria-label="Graphic collage celebrating Ethiopian TikTok trends">
           <div className="art-ring ring-one"></div><div className="art-ring ring-two"></div>
